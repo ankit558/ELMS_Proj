@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+  background-image: url("../Images/bg.jpg");
+  min-height: 350px;
+  background-position: center;
+  background-size: 100%;
+}
+body h1{
+    margin: 10px;
+}
+form input{
+    margin-top: 40px;
+    margin-left: 240px;
+    width: 60%;
+    font-family: arial;
+    font-size: 15pt;
+    height: 40px;
+}
+#button{
+  background-color: #000012;
+  color: white;
+  padding: 10px 5px;
+  font-size: 25px;
+  margin-left: 570px;
+  margin-top: 25px;
+  width: 10%;
+  cursor: pointer;
+  height:fit-content;
+}
+#button a{
+  text-decoration: none;
+  color: white;
+}
+#button:hover{
+    background-color: rgb(83, 83, 146);
+}

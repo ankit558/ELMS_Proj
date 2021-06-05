@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Apply Leave</title>
+        <link rel="stylesheet" href="Css/styles.css">
+    </head>
+    <body>
+        <form method="post" action="apply">
+
+        <div>
+            <h2><center>Apply for Leave</center></h2>
+            <select name="Leave" required> 
+                <option value="">Leave Type</option>
+                <option value="CL">Casual Leave</option>
+                <option value="SL">Sick Leave</option>
+                <option value="EL">Earned Leave</option>
+            </select>   
+        </div>
+
+        <label for="fromdate">From  Date</label>
+        <input type = "date" size ="30" name="fromdate" class ="form-control" min="2021-01-01" max="2021-12-31" required>
+            
+
+        <label for="todate">To Date</label>
+            <input type = "date" size ="30" name="todate" class ="form-control" min="2021-01-01" max="2021-12-31" required>
+
+        <label for="birthdate">Description</label>    
+        <textarea id="textarea1" name="description" required></textarea>
+        <button type="submit" name="apply" id="apply">Apply</button>
+        
+        <div class="l-navbar" id="navbar">
+            <nav class="nav">
+                <div>
+                    <div class="nav__brand">
+                        <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+                        <a href="#" class="nav__logo">ELMS | Employee</a>
+                    </div>
+                    <div class="nav__list">
+                        <a href="MyProfile.jsp" class="nav__link">
+                            <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                            <span class="nav__name">Profile</span>
+                        </a>
+                        <a href="applyleave.html" class="nav__link active">
+                            <ion-icon name="chatbubbles-outline" class="nav__icon"></ion-icon>
+                            <span class="nav__name">Apply Leave</span>
+                        </a>
+
+                        <a href="EchangePassword.html" class="nav__link">
+                            <ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
+                            <span class="nav__name">Change Password</span>
+                        </a>
+                        <div>
+                            <a href="LeaveHistory.jsp "class="nav__link collapse">
+                                <ion-icon name="people-outline" class="nav__icon"></ion-icon>
+                                <span class="nav__name">Leaves History</span>
+                            </a>
+                                
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <a href="Lout" class="nav__link">
+                    <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Sign Out</span>
+                </a>
+            </nav>
+        </div>
+
+       
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        
+        <!-- ===== MAIN JS ===== -->
+        <script src="JS/main.js"></script>
+    </body>
+    
+</html>

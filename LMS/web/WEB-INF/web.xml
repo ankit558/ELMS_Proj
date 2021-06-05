@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+        <servlet-name>admin_data</servlet-name>
+        <servlet-class>Admin.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin_data</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+      <servlet-name>Emp_Login</servlet-name>
+      <servlet-class>Employee.elogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>Emp_Login</servlet-name>
+      <url-pattern>/elogin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>Admin.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/lout</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Emp_Logout</servlet-name>
+        <servlet-class>Employee.ELogout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Emp_Logout</servlet-name>
+        <url-pattern>/Lout</url-pattern>
+    </servlet-mapping>
+          
+   <servlet>
+      <servlet-name>EchangePassword</servlet-name>
+      <servlet-class>Employee.EchangePassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>EchangePassword</servlet-name>
+      <url-pattern>/EchangePassword</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ApplyLeave</servlet-name>
+        <servlet-class>Employee.ApplyLeave</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ApplyLeave</servlet-name>
+        <url-pattern>/apply</url-pattern>
+    </servlet-mapping> 
+    
+    <servlet>
+        <servlet-name>AdminChangePass</servlet-name>
+        <servlet-class>Admin.ChangePassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminChangePass</servlet-name>
+        <url-pattern>/adminCP</url-pattern>
+    </servlet-mapping>
+      
+    <servlet>
+        <servlet-name>EmployeeChangePass</servlet-name>
+        <servlet-class>Employee.EchangePassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmployeeChangePass</servlet-name>
+        <url-pattern>/empCP</url-pattern>
+    </servlet-mapping>
+
+    
+    <welcome-file-list>  
+        <welcome-file>admin.html</welcome-file>   
+    </welcome-file-list>
+</web-app>

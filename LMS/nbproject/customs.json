@@ -1,0 +1,11 @@
+{
+    "elements": {
+        "ion-icon": {},
+        "center": {}
+    },
+    "attributes": {
+        "size": {
+            "context": "input"
+        }
+    }
+}

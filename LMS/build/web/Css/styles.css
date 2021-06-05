@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+:root{
+  --nav-width: 92px;
+
+  --first-color: #0C5DF4;
+  --bg-color: #12192C;
+  --sub-color: #B6CEFC;
+  --white-color: #FFF;
+  
+  --body-font: 'Poppins', sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+  
+  --z-fixed: 100;
+}
+
+
+*,::before,::after{
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  margin: 0;
+  padding: 2rem 0 0 6.75rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-image: url("../Images/bg.jpg");
+}
+h1{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+.l-navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width : var(--nav-width);
+  height: 100vh;
+  background-color:  var(--bg-color);
+  color: var(--white-color);
+  padding: 1.5rem 1.5rem 2rem;
+
+}
+
+.nav{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.nav__brand{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.nav__toggle{
+  font-size: 1.25rem;
+  padding: .75rem;
+  cursor: pointer;
+}
+.nav__logo{
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+.nav__link{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: .75rem;
+  padding: .75rem;
+  color: var(--white-color);
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  
+  cursor: pointer;
+}
+.nav__link:hover{
+  background-color: var(--first-color);
+}
+.nav__list:active{
+    color: white;
+}
+
+.nav__icon{
+  font-size: 1.25rem;
+}
+.nav__name{
+  font-size: var(--small-font-size);
+}
+
+.expander{
+  width: calc(var(--nav-width) + 9.25rem);
+  position:fixed;
+}
+
+.body-pd{
+  padding: 2rem 0 0 16rem;
+}
+
+.active{
+  background-color: var(--first-color);
+}
+
+.collapse{
+  grid-template-columns: 20px max-content 1fr;
+}
+.collapse__link{
+  justify-self: flex-end;
+  transition: .5s;
+}
+.collapse__menu{
+  display: none;
+  padding: .75rem 2.25rem;
+}
+.collapse__sublink{
+  color: var(--sub-color);
+  font-size: var(--small-font-size);
+}
+.collapse__sublink:hover{
+  color: var(--white-color);
+}
+
+.showCollapse{
+  display: block;
+}
+
+.rotate{
+  transform: rotate(180deg);
+}
+*{
+
+	margin: 0;
+
+	padding: 0;
+
+	font-family: arial;
+
+	box-sizing: border-box;
+
+}
+
+body{
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background-color: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6));
+	background-size: 100% 100%;
+	background-repeat: inherit;
+}
+table{
+	width: 800px;
+	box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
+        margin: 20px;
+}
+table, td, th{
+
+	padding: 20px;
+        margin-bottom: 250px;
+	border: 1px solid lightgray;
+
+	border-collapse: collapse;
+
+	text-align: center;
+
+
+}
+
+td{
+
+	font-size: 18px;
+
+}
+
+th{
+
+	background-color:lightblue;
+
+	color: white;
+
+}
+
+tr:nth-child(odd){
+
+	background-color: lightblue;
+
+}
+
+
+
+tr:nth-child(even){
+
+	background-color: #ededed;
+
+}
+h1{
+  text-align: center;
+  margin-bottom: 100px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifi;
+}
+form {
+	width: 600px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+select{
+    display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+        font-weight: bold;
+}
+select option{
+    font-weight: bold;
+}
+textarea{
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 5px;
+    height: 70px;
+}
+input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+label {
+	color: #888;
+	font-size: 18px;
+	padding: 10px;
+}
+button {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+        cursor: pointer; 
+}
+button:hover{
+	opacity: .7;
+}
+
+
+
+
+
